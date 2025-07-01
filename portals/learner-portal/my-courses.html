@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Courses | Ibandla Tech</title>
+  <link rel="stylesheet" href="css/learner-style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: white;
+    }
+    .sidebar {
+      background-color: #111;
+      height: 100vh;
+      padding: 1.5rem;
+    }
+    .sidebar a {
+      color: #ccc;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 1rem;
+    }
+    .sidebar a:hover {
+      color: #fff;
+    }
+    .card {
+      background-color: #222;
+      border: none;
+    }
+    .progress {
+      height: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-2 sidebar">
+        <h5 class="text-white mb-4">Learner Portal</h5>
+        <a href="learner-dashboard.html">Dashboard</a>
+        <a href="#">My Courses</a>
+        <a href="certificates.html">My Certificates</a>
+        <a href="resources.html">Resources</a>
+        <a href="#">Announcements</a>
+        <a href="#">Logout</a>
+      </div>
+
+      <!-- Main Content -->
+      <div class="col-md-10 p-4">
+        <h2 class="mb-4">My Learning Tracks</h2>
+        <div class="row g-4">
+          <!-- Course Card 1 -->
+          <div class="col-md-4">
+            <div class="card p-3">
+              <h5>AWS Cloud Practitioner</h5>
+              <p class="text-white-50">Modules: 6 | Quizzes: 3</p>
+              <div class="progress mb-2">
+                <div class="progress-bar bg-success" style="width: 76%"></div>
+              </div>
+              <small>Progress: 76%</small>
+              <a href="#" class="btn btn-outline-light btn-sm mt-3">Continue Course</a>
+            </div>
+          </div>
+          <!-- Course Card 2 -->
+          <div class="col-md-4">
+            <div class="card p-3">
+              <h5>Microsoft Azure Fundamentals</h5>
+              <p class="text-white-50">Modules: 4 | Quizzes: 2</p>
+              <div class="progress mb-2">
+                <div class="progress-bar bg-info" style="width: 40%"></div>
+              </div>
+              <small>Progress: 40%</small>
+              <a href="#" class="btn btn-outline-light btn-sm mt-3">Resume Course</a>
+            </div>
+          </div>
+          <!-- Course Card 3 -->
+          <div class="col-md-4">
+            <div class="card p-3">
+              <h5>CompTIA A+</h5>
+              <p class="text-white-50">Modules: 8 | Quizzes: 4</p>
+              <div class="progress mb-2">
+                <div class="progress-bar bg-secondary" style="width: 0%"></div>
+              </div>
+              <small>Not Started</small>
+              <a href="#" class="btn btn-outline-light btn-sm mt-3">Begin Course</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
