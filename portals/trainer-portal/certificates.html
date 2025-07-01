@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Certify Learners | Ibandla Tech</title>
+  <link rel="stylesheet" href="css/trainer-style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <style>
+    body {
+      background-color: #121212;
+      color: white;
+    }
+    .sidebar {
+      background-color: #111;
+      height: 100vh;
+      padding: 1.5rem;
+    }
+    .sidebar a {
+      color: #ccc;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 1rem;
+    }
+    .sidebar a:hover {
+      color: #fff;
+    }
+    .status-issued {
+      background-color: #0d6efd;
+    }
+    .status-pending {
+      background-color: #ffc107;
+      color: #111;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-2 sidebar">
+        <h5 class="text-white mb-4">Admin Panel</h5>
+        <a href="trainer-dashboard.html">Dashboard</a>
+        <a href="learners.html">Manage Learners</a>
+        <a href="upload-content.html">Upload Content</a>
+        <a href="#">Certify Students</a>
+        <a href="#">Settings</a>
+        <a href="#">Logout</a>
+      </div>
+
+      <!-- Main Content -->
+      <div class="col-md-10 p-4">
+        <h2 class="mb-4">Certification Center</h2>
+
+        <table class="table table-dark table-bordered table-hover">
+          <thead>
+            <tr>
+              <th>Learner Name</th>
+              <th>Track</th>
+              <th>Status</th>
+              <th>Date Completed</th>
+              <th>Certificate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Nomusa Dube</td>
+              <td>AWS Cloud Practitioner</td>
+              <td><span class="badge status-issued">Issued</span></td>
+              <td>2025-07-22</td>
+              <td><a href="certs/nomusa.pdf" class="btn btn-outline-light btn-sm" download>Download</a></td>
+            </tr>
+            <tr>
+              <td>Ayabonga Zondi</td>
+              <td>CompTIA A+</td>
+              <td><span class="badge status-pending">Pending Approval</span></td>
+              <td>–</td>
+              <td><button class="btn btn-sm btn-primary">Issue Now</button></td>
+            </tr>
+            <tr>
+              <td>Andile Maseko</td>
+              <td>Microsoft Azure Fundamentals</td>
+              <td><span class="badge status-issued">Issued</span></td>
+              <td>2025-06-18</td>
+              <td><a href="certs/andile.pdf" class="btn btn-outline-light btn-sm" download>Download</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Optional: Upload Custom Certificate Template -->
+        <div class="mt-5">
+          <h5>Upload Custom Certificate Template</h5>
+          <p class="text-white-50">Use your own branded design (PDF format recommended).</p>
+          <form>
+            <div class="mb-3">
+              <input type="file" class="form-control" />
+            </div>
+            <button class="btn btn-outline-secondary btn-sm" type="submit">Upload Template</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

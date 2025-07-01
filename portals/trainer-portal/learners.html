@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Learner Management | Ibandla Tech</title>
+  <link rel="stylesheet" href="css/trainer-style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <style>
+    body {
+      background-color: #121212;
+      color: white;
+    }
+    .sidebar {
+      background-color: #111;
+      height: 100vh;
+      padding: 1.5rem;
+    }
+    .sidebar a {
+      color: #ccc;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 1rem;
+    }
+    .sidebar a:hover {
+      color: #fff;
+    }
+    .status-active {
+      background-color: #198754;
+    }
+    .status-complete {
+      background-color: #0dcaf0;
+    }
+    .status-inactive {
+      background-color: #6c757d;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-2 sidebar">
+        <h5 class="text-white mb-4">Admin Panel</h5>
+        <a href="trainer-dashboard.html">Dashboard</a>
+        <a href="#">Manage Learners</a>
+        <a href="upload-content.html">Upload Content</a>
+        <a href="certificates.html">Certify Students</a>
+        <a href="#">Settings</a>
+        <a href="#">Logout</a>
+      </div>
+
+      <!-- Main -->
+      <div class="col-md-10 p-4">
+        <h2 class="mb-4">Learner Management</h2>
+
+        <table class="table table-dark table-hover">
+          <thead>
+            <tr>
+              <th>Learner Name</th>
+              <th>Email</th>
+              <th>Track</th>
+              <th>Status</th>
+              <th>Progress</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Nomusa Dube</td>
+              <td>nomusa@example.com</td>
+              <td>AWS Cloud Practitioner</td>
+              <td><span class="badge status-active">Active</span></td>
+              <td>76%</td>
+              <td><a href="#" class="btn btn-sm btn-outline-light">View</a></td>
+            </tr>
+            <tr>
+              <td>Andile Maseko</td>
+              <td>andile@example.com</td>
+              <td>Microsoft Azure Fundamentals</td>
+              <td><span class="badge status-complete">Completed</span></td>
+              <td>100%</td>
+              <td><a href="#" class="btn btn-sm btn-outline-light">Certificate</a></td>
+            </tr>
+            <tr>
+              <td>Ayabonga Zondi</td>
+              <td>ayabonga@example.com</td>
+              <td>CompTIA A+</td>
+              <td><span class="badge status-inactive">Inactive</span></td>
+              <td>12%</td>
+              <td><a href="#" class="btn btn-sm btn-outline-light">Remind</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
